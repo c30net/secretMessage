@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Secret Message</title>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            body {
+                padding: 20px;
+                margin: 10px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="p-3 bg-info rounded border border-warning">
+            <div class="decrypted">
+                <div class="card">
+                    <span class="btn btn-success"
+                        >Here is Your secret message</span
+                    >
+
+                    <input
+                        type="text"
+                        class="btn btn-warning btn-lg btn-warning2"
+                    />
+                    <div class="card-body">
+                        <p class="card-text text-center"></p>
+                        <a href="#" class="btn btn-primary"
+                            >Send New Secret Message</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <form class="form">
+                <div class="form-group">
+                    <label for="message-input" class="h3"
+                        ><button class="btn btn-success">
+                            Write a secret message that you want to send to
+                            someone!
+                        </button></label
+                    >
+                    <br /><br />
+                    <input
+                        id="message-input"
+                        type="text"
+                        class="form-control"
+                        placeholder="secret message"
+                    />
+                </div>
+                <br />
+                <button type="submit" class="btn btn-warning">Submit</button>
+            </form>
+            <div id="div-link" class="mt-3 d-none">
+                <button class="btn btn-warning btn-warning1">Copy Link</button>
+                <br />
+                <input id="link-input" type="text" class="mt-3 form-control" />
+                <br />
+
+                <span class="btn btn-success"
+                    >and share it to anyone you like to read your secret
+                    message!</span
+                >
+            </div>
+        </div>
+        <!-- <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+            crossorigin="anonymous"
+        ></script> -->
+
+        <script src="index.js"></script>
+    </body>
+</html>
